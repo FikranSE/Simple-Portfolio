@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Neonderthaw&family=Pacifico&family=Paytone+One&family=Plus+Jakarta+Sans:wght@800&family=Poppins:wght@300&family=Roboto+Mono:wght@502&family=Roboto+Slab:wght@700&family=Roboto:wght@300&family=Slabo+27px&family=Ubuntu:wght@700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background: linear-gradient(to right,
+    black 0%,
+    black 50%,
+    white 50%,
+    white 100%);
+}
+
+.contact-bx{
+    position:relative;
+    width:80%;
+    height:500px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius:2px;
+}
+
+.info-contact{
+    margin-right:30px;
+}
+
+.title h2{
+    color:rgb(186, 186, 186);
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+}
+
+.icon{
+    margin:12px 0;
+}
+
+.icon i{
+    font-size:46px;
+    color:rgb(186, 186, 186);
+}
+
+.sub-title h1{
+    font-family: 'Roboto Slab', serif;
+    color:#1D9AF2;
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.sub-title p{
+    width:420px;
+    font-family:'ubuntu';
+}
+
+.form input{
+    border:2px solid rgb(205, 203, 203);
+    margin:4px 0;
+    border-radius:4px;
+}
+
+.name input{
+    width:440px;
+    height:50px;
+    outline: none;
+}
+.nama,
+.mail,
+.sub,
+.message{
+    padding-left:12px;
+    font-size:15px;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(45, 45, 84);
+}
+.email input{
+    width:440px;
+    height:50px;
+    outline: none;
+}
+
+.subject input{
+    width:440px;
+    height:50px;
+    outline: none;
+}
+.pesan input{
+    width:440px;
+    height:50px;
+    outline: none;
+}
+
+.btn-contact button{
+    margin-top:20px;
+    background-color: #ffffff;
+    border: 1px solid #1D9AF2;
+    border-radius: 4px;
+    padding: 13px 35px;
+    cursor: pointer;
+    font-size:14px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.btn-contact button:hover{
+    opacity:1;
+}
+
+.bi-arrow-left{
+    position:absolute;
+    color:white;
+    font-size:25px;
+    left:0;
+    padding:12px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+    background:#1D9AF2;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.bi-arrow-left:hover{
+    background-color:#1678bd;
+}
+
+@media screen and (max-width:1400px){
+    .contact-bx{
+        flex-direction: column;
+        height:700px;
+    }
+    .bi-arrow-left{
+        top:10px;
+        left:10px;
+        border-top-right-radius:0;
+        border-bottom-right-radius:25px;
+    }
+}
+
+@media screen and (max-width:690px){
+    .contact-bx{
+        width:96%;
+        height:97vh;
+    }
+    .bi-arrow-left{
+        border-top-right-radius:0;
+        border-bottom-right-radius:25px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .form input{
+        width:250px;
+    }
+    .title{
+        margin-left:50px;
+    }
+    .icon{
+        margin-left:50px;
+    }
+    .sub-title{
+        width:50%;
+        margin-left:50px;
+    }
+    .sub-title p{
+        width:300px;
+    }
+}

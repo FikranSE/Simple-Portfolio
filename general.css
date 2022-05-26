@@ -1,0 +1,242 @@
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #43b6fe #ffffff;
+}
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #43b6fe;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 340px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    padding : 120px 90px;
+    min-height: 100vh;
+}
+
+nav{
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(239, 238, 238);
+}
+nav{
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    transition:all 0.5s ease 0s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: "poppins",serif;
+    margin-right: 5rem;
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+nav ul li:active{
+    transform: scale(0.92);
+}
+
+.tombol-contact{
+    display: flex;
+    align-items: center;
+}
+button {
+    color: #1D9AF2;
+    background-color: #ffffff;
+    border: 1px solid #1D9AF2;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:14px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+    }
+    button:hover {
+    opacity: 1;
+    }
+    button:active {
+        transform:scale(0.9);
+    }
+
+@media screen and (max-width: 1080px){
+    .foto-dan-profil{
+        width: 95.4%;
+    }
+    .foto-fikran{
+        
+        margin-left: 12rem;
+    }
+    .pointer{
+        display: none;
+    }
+    .bio{
+        padding-bottom: 6rem;
+    }
+    .promosi {
+        display:flex;
+        flex-direction: column;
+    }
+    .promosi a{
+        margin-bottom: 6px;
+    }
+    
+    
+    
+} 
+
+@media screen and (max-width:768px){
+    ul.show{
+        left:-1000px;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: row;
+        position:absolute;
+        top: 82px;
+        left:0;
+        height: 40%;
+        padding:3px;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    nav ul li:hover{
+        border:0;
+        transform: translateY(-5px);
+    }
+    nav ul li:active{
+        transform: scale(0.9);
+    }
+    nav ul li a{
+        margin:20px;
+    }
+    .btn-menu{
+        display: block;
+    }
+    .foto-dan-profil{
+        margin-top:100px;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+    }
+    .nama-profil{
+        margin: 12px auto;
+    }
+    .foto-fikran{
+        margin: 0 auto;
+    }
+    .judul-thumbnail{
+        margin-left: 5rem;
+    }
+    .box-project{
+        margin:0;
+    }
+    .main{
+        width: 95.1%;
+        border:none;
+    }
+    header{
+        padding: 10px 10px;
+        margin-top: 200px;
+    }
+    body{
+        padding: 0 18px;
+    }
+    .promosi{
+        display:flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .promosi a{
+        margin-left: 1px;
+        margin-bottom: 10px;
+    }
+    .logo{
+        margin-left:-80px;
+    }
+
+    
+    
+    
+    
+} 
+@media screen and (max-width:515px){
+    .logo{
+        display:none;
+    }
+    .promosi{
+        width: 100%;
+    }
+    .promosi a{
+        font-size:14px;
+    }
+    
+}
+@media screen and (max-width:376px){
+    .promosi a{
+        font-size:11px;
+    }
+    
+}
+
+@media screen and (max-width:320px){
+    .main{
+        width: 92%;
+    }
+    .foto-fikran{
+        margin-right: 170px;
+    }
+    .nama-profil{
+        margin-right: 120px;
+    }
+    
+}
